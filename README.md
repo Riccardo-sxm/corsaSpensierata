@@ -51,4 +51,7 @@ Vince il corridore 2
 (il programma continua fino a quando non arrivano tutti i corridori)
 
 PASSO 1: Genera casualmente un percorso con la lunghezza definita dall'utente, utilizzando gli ostacoli predefiniti.
-PASSO 2:
+PASSO 2: Aggiungiamo le azioni, ne facciamo scegliere una random, e controlliamo che sia l'azione giusta per l'ostacolo.
+PASSO 3: Aggiungere i 5 corridori. I corrdiori proseguono fino alla fine del percorso
+PASSO 4: Memorizzare e visualizzare le azioni scelte da ogni corridore e il numero degli elementi superati.
+PASSO 5: Controllare chi ha vinto la gara e fare una classifica.
