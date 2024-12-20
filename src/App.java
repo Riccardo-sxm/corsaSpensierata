@@ -8,16 +8,36 @@ public class App {
         Random r = new Random();
 
         String[] ostacoli = {"strada", "buca", "muro", "piscina"};
+        String[] azioni={"corri","salta", "arrampicati","nuota"};
         
         System.out.println("Quanto deve essere lungo il percorso?");
         int lunghezza = sc.nextInt();
 
-        String[] percorso = new String[lunghezza];
+        int[] percorso = new int[lunghezza];
         for (int i =0; i<lunghezza; i++) {
-            percorso[i] = ostacoli[r.nextInt(4)];
+            percorso[i] = r.nextInt(4);
+            
+        }
+        for (int i = 0; i < percorso.length; i++) {
+            System.out.print(ostacoli[percorso[i]]+" ");
+
+            
+        }
+        System.out.println("");
+        for (int i = 0; i < percorso.length; i++) {
+        int sceltaAzione=r.nextInt(4);
+        System.out.println("l'azione scelta è "+ azioni[sceltaAzione]);
+        if (percorso[i]== sceltaAzione){
+            System.out.println("l'azione è corretta per l'ostacolo "+ ostacoli[percorso[i]] );
+
+
+        }else {
+            System.out.println("l'azione è sbagliata");
         }
 
-        System.out.println(Arrays.toString(percorso));
+            
+        }
+        
 
         sc.close();
     }
